@@ -28,41 +28,41 @@ install.packages(packages)
 
 
 ## Repository Structure
-•	Data preprocessing: This script has used for cleaning, transforming, and preparing external datasets before modeling
-
-•	Model training: Contains scripts for training the machine learning models (like Random Forest or BRT) used in forest fire risk mapping.
-•	Model validation: Includes scripts and results related to testing the model performance (AUC, and confusion matrix).
-•	Visualization: Holds scripts and outputs for making maps, graphs, and other visual results of the model.
-•	fire incidents analysis: This script has data and analysis related to forest fire incidents recorded over the past 13 years in the study area.
+- Data preprocessing: This script has used for cleaning, transforming, and preparing external datasets before modeling
+- Model training: Contains scripts for training the machine learning models (like Random Forest or BRT) used in forest fire risk mapping.
+- Model validation: Includes scripts and results related to testing the model performance (AUC, and confusion matrix).
+- Visualization: Holds scripts and outputs for making maps, graphs, and other visual results of the model.
+- fire incidents analysis: This script has data and analysis related to forest fire incidents recorded over the past 13 years in the study area.
 
 
 Data Requirements
 This research utilizes a combination of topographic, climatic, anthropogenic, and biophysical factors to model forest fire risk in the Rasuwa District, Nepal. After acquiring the raw datasets, data preprocessing steps such as buffering, clipping, and masking were applied using R scripts. These steps are explained in detail in the Methodology section of the research paper.
 ⚠️ Note: Due to the large size of the original datasets, they are not included in this repository. However, the sources and types of data used are listed below for reference.
-🏔️ Topographic Datasets
+
+- 🏔️ Topographic Datasets
 •	Elevation- SRTM DEM
 •	Slope- SRTM DEM
 •	Aspect- SRTM DEM
 •	Topographic Wetness Index (TWI)- SRTM DEM
-🌦️ Climatic Datasets
+
+- 🌦Climatic Datasets
 •	Temperature MOD11C3 V6.1
 LP DAAC - MOD11C3
 •	Precipitation
 https://www.worldclim.org/ 
 (Hijmans et al., 2005)
-FRTC. (2024). National Land Cover  Monitoring System of Nepal.
+
 Hijmans, R. J., Cameron, S. E., Parra, J. L., Jones, P. G., & Jarvis, A. (2005). Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology, 25(15), 1965–1978. https://doi.org/10.1002/JOC.1276
-OCHA. (2015). Settlements in Nepal | Humanitarian Dataset | HDX. https://data.humdata.org/dataset/settlements-in-nepal
-OpenStreetMap, H. (2023). Nepal Roads (OpenStreetMap Export). https://data.humdata.org/dataset/hotosm_npl_roads
- 
-•	Wind Speed- Global Wind Atlas
-🚧 Anthropogenic Datasets
+
+Wind Speed- Global Wind Atlas
+
+- Anthropogenic Datasets
 •	Distance to Roads (OpenStreetMap, 2023)
 OpenStreetMap, H. (2023). Nepal Roads (OpenStreetMap Export) https://data.humdata.org/dataset/hotosm_npl_roads
 •	Distance to Settlements- (OCHA, 2015)
 OCHA. (2015). Settlements in Nepal | Humanitarian Dataset | HDX. https://data.humdata.org/dataset/settlements-in-nepal
 
-🌿 Biophysical Datasets
+- Biophysical Datasets
 •	Land Use Land Cover (LULC)- (FRTC, 2024)
 •	FRTC. (2024). National Land Cover Monitoring System of Nepal.
 •	Normalized Difference Vegetation Index (NDVI) 
