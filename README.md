@@ -3,12 +3,6 @@
 ## Project Overview 
 This repository contains R scripts and related materials for the research project on forest fire risk mapping in Rasuwa District, Nepal using Random Forest (RF).
 
-## Authors
-SJK designed the study, conducted the investigation, curated and analyzed the data, prepared the original draft of the manuscript, and developed the visualizations. 
-MD contributed to methodology development, software implementation, and project administration, and was responsible for rewriting, editing, and preparing the final version of the manuscript. 
-AP supervised the research work, validated the findings, and contributed to reviewing and editing the manuscript.
-
-
 ## ⚙️ Setup & Installation  
 ### Prerequisites  
 - R Version: `>= 4.4.1
@@ -32,11 +26,12 @@ install.packages(packages)
 
 
 ## Data Requirements
-This research utilizes a combination of topographic, climatic, anthropogenic, and biophysical factors to model forest fire risk in the Rasuwa District, Nepal. After acquiring the raw datasets, data preprocessing steps such as buffering, clipping, and masking were applied using R scripts. These steps are explained in detail in the Methodology section of the research paper.
+This research utilizes a combination of topographic, climatic, anthropogenic, and biophysical factors to model forest fire risk in the Rasuwa District, Nepal. After acquiring the raw datasets, data preprocessing steps such as buffering, clipping, and masking were applied using GEE and ArcGis. These steps are explained in detail in the Methodology section of the research paper.
 
 ⚠️ Note: Due to the large size of the original datasets, they are not included in this repository. However, the sources and types of data used are listed below for reference.
 
-###**🏔️ Topographic Datasets**
+### **🏔️Topographic Datasets**
+
 •	Elevation- SRTM DEM
 
 •	Slope- SRTM DEM
@@ -45,22 +40,28 @@ This research utilizes a combination of topographic, climatic, anthropogenic, an
 
 •	Topographic Wetness Index (TWI)- SRTM DEM
 
-###**🌦Climatic Datasets**
-•	Temperature [MOD11C3 V6.1](https://lpdaac.usgs.gov/products/mod11c3v061/)
+### **🌦Climatic Datasets**
+•	Temperature
+
+[MOD11C3 V6.1](https://lpdaac.usgs.gov/products/mod11c3v061/)
 
 •	Precipitation
-https://www.worldclim.org/ 
-(Hijmans et al., 2005)
+
+[(Hijmans et al., 2005)](https://www.worldclim.org/)
 
 Hijmans, R. J., Cameron, S. E., Parra, J. L., Jones, P. G., & Jarvis, A. (2005). Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology, 25(15), 1965–1978. https://doi.org/10.1002/JOC.1276
 
-Wind Speed- [https://globalwindatlas.info/en/](Global Wind Atlas)
+Wind Speed
+
+-[Global Wind Atlas](https://globalwindatlas.info/en/)
 
 ### **Anthropogenic Datasets**
 •	Distance to Roads (OpenStreetMap, 2023)
+
 OpenStreetMap, H. (2023). Nepal Roads (OpenStreetMap Export) https://data.humdata.org/dataset/hotosm_npl_roads
 
 •	Distance to Settlements- (OCHA, 2015)
+
 OCHA. (2015). Settlements in Nepal | Humanitarian Dataset | HDX. https://data.humdata.org/dataset/settlements-in-nepal
 
 ### **Biophysical Datasets**
