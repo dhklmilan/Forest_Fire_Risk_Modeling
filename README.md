@@ -39,13 +39,13 @@ Data Requirements
 This research utilizes a combination of topographic, climatic, anthropogenic, and biophysical factors to model forest fire risk in the Rasuwa District, Nepal. After acquiring the raw datasets, data preprocessing steps such as buffering, clipping, and masking were applied using R scripts. These steps are explained in detail in the Methodology section of the research paper.
 ⚠️ Note: Due to the large size of the original datasets, they are not included in this repository. However, the sources and types of data used are listed below for reference.
 
-- 🏔️ Topographic Datasets
+#**🏔️ Topographic Datasets**
 •	Elevation- SRTM DEM
 •	Slope- SRTM DEM
 •	Aspect- SRTM DEM
 •	Topographic Wetness Index (TWI)- SRTM DEM
 
-- 🌦Climatic Datasets
+#**🌦Climatic Datasets**
 •	Temperature MOD11C3 V6.1
 LP DAAC - MOD11C3
 •	Precipitation
@@ -56,13 +56,13 @@ Hijmans, R. J., Cameron, S. E., Parra, J. L., Jones, P. G., & Jarvis, A. (2005).
 
 Wind Speed- Global Wind Atlas
 
-- Anthropogenic Datasets
+# **Anthropogenic Datasets**
 •	Distance to Roads (OpenStreetMap, 2023)
 OpenStreetMap, H. (2023). Nepal Roads (OpenStreetMap Export) https://data.humdata.org/dataset/hotosm_npl_roads
 •	Distance to Settlements- (OCHA, 2015)
 OCHA. (2015). Settlements in Nepal | Humanitarian Dataset | HDX. https://data.humdata.org/dataset/settlements-in-nepal
 
-- Biophysical Datasets
+# **Biophysical Datasets**
 •	Land Use Land Cover (LULC)- (FRTC, 2024)
 •	FRTC. (2024). National Land Cover Monitoring System of Nepal.
 •	Normalized Difference Vegetation Index (NDVI) 
