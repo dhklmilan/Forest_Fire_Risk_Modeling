@@ -1,9 +1,9 @@
-# Forest_Fire_Risk_Modeling
+# Forest Fire Risk Assessment using Machine Learning and Earth Observation Technique in Himalayan Regions: Insights from Rasuwa District, Nepal
 
 ## Project Overview 
-This repository contains R scripts and related materials for the research project on forest fire risk mapping in Rasuwa District, Nepal using Random Forest (RF).
+This repository contains R scripts and related materials for the research on forest fire risk mapping in Rasuwa District, Nepal, using Random Forest (RF).
 
-## ⚙️ Setup & Installation  
+## Setup & Installation  
 ### Prerequisites  
 - R Version: `>= 4.4.1
 You'll need the following software installed: 
@@ -11,26 +11,36 @@ R statistical programming language:
 [Download R](https://cran.r-project.org/) 
 [Download RStudio](https://posit.co/download/rstudio-desktop/)
 - Key R Packages:  
-packages <- c("rasterVis", "sf", "usdm", "sdm", "ggplot2", "dplyr", "dismo", "rgee", 
-              "terra", "mapview", "shiny", "leaflet", "reticulate", "raster", 
-              "rJava", "ggspatial", "randomForest", "caret", "pROC", "geosphere")
+packages <- c("rasterVis", "sf", "usdm", "ggplot2", "dplyr", "terra", "mapview", "raster", "randomForest", "pROC",)
 
 install.packages(packages)
 
 ## Repository Structure
 - Data preprocessing: This script has used for cleaning, transforming, and preparing external datasets before modeling
-- Model training: Contains scripts for training the machine learning models (like Random Forest or BRT) used in forest fire risk mapping.
+- Model training: Contains scripts for training the random forest model with different hyperparameters used in forest fire risk mapping.
 - Model validation: Includes scripts and results related to testing the model performance (AUC, and confusion matrix).
 - Visualization: Holds scripts and outputs for making maps, graphs, and other visual results of the model.
 - fire incidents analysis: This script has data and analysis related to forest fire incidents recorded over the past 13 years in the study area.
 
 
 ## Data Requirements
-This research utilizes a combination of topographic, climatic, anthropogenic, and biophysical factors to model forest fire risk in the Rasuwa District, Nepal. After acquiring the raw datasets, data preprocessing steps such as buffering, clipping, and masking were applied using GEE and ArcGis. These steps are explained in detail in the Methodology section of the research paper.
+This research utilizes a combination of topographic, climatic, anthropogenic, and biophysical factors to model forest fire risk in the Rasuwa District, Nepal. After acquiring the raw datasets, data preprocessing steps such as buffering, clipping, and masking were applied using GEE and ArcGIS. These steps are explained in detail in the Methodology section of the research paper.
 
-⚠️ Note: Due to the large size of the original datasets, they are not included in this repository. However, the sources and types of data used are listed below for reference.
+### **Forest Fire Incidents**
 
-### **🏔️Topographic Datasets**
+This research used forest fire incident data from the NASA VIIRS (Visible Infrared Imaging Radiometer Suite) active fire product at ~375m spatial resolution. The dataset covers a 13-year period from 2012 to 2024.
+
+Source: NASA FIRMS (Fire Information for Resource Management System)
+
+Resolution: ~375 meters
+
+Sensor: VIIRS (Suomi NPP / NOAA-20)
+
+Time Period: 2012–2024
+
+Use: Used to analyze the spatial and temporal distribution of fire incidents and to train and test the model.
+
+### **Topographic Datasets**
 
 •	Elevation- SRTM DEM
 
@@ -40,7 +50,7 @@ This research utilizes a combination of topographic, climatic, anthropogenic, an
 
 •	Topographic Wetness Index (TWI)- SRTM DEM
 
-### **🌦Climatic Datasets**
+### **Climatic Datasets**
 •	Temperature
 
 [MOD11C3 V6.1](https://lpdaac.usgs.gov/products/mod11c3v061/)
