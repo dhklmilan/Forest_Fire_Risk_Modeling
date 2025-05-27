@@ -77,8 +77,3 @@ Wind Speed [Global Wind Atlas](https://globalwindatlas.info/en/)
 •	Normalized Difference Vegetation Index (NDVI) 
 
   > Landsat 8
-
-
-## Acknowledgment
-Dhakal Milan developed this code as part of a research project on forest fire risk mapping in Rasuwa District, Nepal, which was conducted in collaboration with Kunwar. j Sudeep and Parajuli Ashok. For the complete study and results, refer to the published research paper.
-
