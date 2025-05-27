@@ -1,6 +1,6 @@
 # Forest Fire Risk Assessment using Machine Learning and Earth Observation Technique in Himalayan Regions: Insights from Rasuwa District, Nepal
 
-## Project Overview 
+## Study Overview 
 This repository contains R scripts and related materials for the research on forest fire risk mapping in Rasuwa District, Nepal, using Random Forest (RF).
 
 ## Setup & Installation  
