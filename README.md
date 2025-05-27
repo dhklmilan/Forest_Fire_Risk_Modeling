@@ -30,7 +30,7 @@ This research utilizes a combination of topographic, climatic, anthropogenic, an
 
 This research used forest fire incident data from the NASA VIIRS (Visible Infrared Imaging Radiometer Suite) active fire product at ~375m spatial resolution. The dataset covers a 13-year period from 2012 to 2024, eliminating low confidence incidents.
 
-Source: NASA FIRMS (Fire Information for Resource Management System)
+> NASA FIRMS (Fire Information for Resource Management System)
 
 Resolution: ~375 meters
 
@@ -51,29 +51,23 @@ Use: Used to analyze the spatial and temporal distribution of fire incidents and
 •	Topographic Wetness Index (TWI)- SRTM DEM
 
 ### **Climatic Datasets**
-•	Temperature
+•	Temperature [MOD11C3 V6.1](https://lpdaac.usgs.gov/products/mod11c3v061/)
 
-  [MOD11C3 V6.1](https://lpdaac.usgs.gov/products/mod11c3v061/)
+•	Precipitation [(Hijmans et al., 2005)](https://www.worldclim.org/)
 
-•	Precipitation
-
-  [(Hijmans et al., 2005)](https://www.worldclim.org/)
-
-  Hijmans, R. J., Cameron, S. E., Parra, J. L., Jones, P. G., & Jarvis, A. (2005). Very high resolution interpolated climate surfaces for global land areas. International 
+  > Hijmans, R. J., Cameron, S. E., Parra, J. L., Jones, P. G., & Jarvis, A. (2005). Very high resolution interpolated climate surfaces for global land areas. International 
   Journal of Climatology, 25(15), 1965–1978. https://doi.org/10.1002/JOC.1276
 
-Wind Speed
-
--[Global Wind Atlas](https://globalwindatlas.info/en/)
+Wind Speed [Global Wind Atlas](https://globalwindatlas.info/en/)
 
 ### **Anthropogenic Datasets**
 •	Distance to Roads (OpenStreetMap, 2023)
 
-  OpenStreetMap, H. (2023). Nepal Roads (OpenStreetMap Export) https://data.humdata.org/dataset/hotosm_npl_roads
+ > OpenStreetMap, H. (2023). Nepal Roads (OpenStreetMap Export) https://data.humdata.org/dataset/hotosm_npl_roads
 
 •	Distance to Settlements- (OCHA, 2015)
 
-  OCHA. (2015). Settlements in Nepal | Humanitarian Dataset | HDX. https://data.humdata.org/dataset/settlements-in-nepal
+  > OCHA. (2015). Settlements in Nepal | Humanitarian Dataset | HDX. https://data.humdata.org/dataset/settlements-in-nepal
 
 ### **Biophysical Datasets**
 •	Land Use Land Cover (LULC)- [FRTC, 2024](https://frtc.gov.np/downloadfiles/NLCMS_Report-1734713324.pdf)
