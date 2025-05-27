@@ -3,6 +3,8 @@
 ## Study Overview 
 This repository contains R scripts and related materials for the research on forest fire risk mapping in Rasuwa District, Nepal, using Random Forest (RF).
 
+Preprint:
+
 ## Setup & Installation  
 ### Prerequisites  
 - R Version: `>= 4.4.1
@@ -74,7 +76,7 @@ Wind Speed [Global Wind Atlas](https://globalwindatlas.info/en/)
 
 •	Normalized Difference Vegetation Index (NDVI) 
 
-  Landsat 8
+  > Landsat 8
 
 
 ## Acknowledgment
