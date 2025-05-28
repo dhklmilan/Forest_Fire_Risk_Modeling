@@ -1,5 +1,5 @@
 # This script is licensed under the MIT License.
-# Copyright (c) 2024 (Dhakal, Milan)
+# Copyright © 2024 (Dhakal, Milan)
 
 # Set the working directory
 setwd("D:/Rasuwa_Ensemble\\results_hyperpara")
